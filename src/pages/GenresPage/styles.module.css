@@ -1,0 +1,26 @@
+.content{
+    width: calc(100% - 80px);
+    max-width: 1200px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.list{
+    min-height: calc(100vh - 200px);
+    padding: 10px 20px;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.link{
+    margin: 10px 0;
+    cursor: pointer;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+.linkActive{
+    font-weight: bold;
+}
