@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 import classnames from "classnames";
 
 export function BookPreview(props){
-    let [count, setCount] = useState(0);
+    let [count, setCount] = useState(0); // @FIXME
     return <div className={classnames(styles.wrapper, {
         [styles.alignBottom]: props.countPositionBottom
     })}>

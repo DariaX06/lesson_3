@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Category } from "../../components/Category/Category";
 import styles from "./styles.module.css";
 export function GenresPage(props) {
-    let [activeCategory, setActiveCategory] = useState(props.categorys[0]);
+    let [activeCategory, setActiveCategory] = useState(props.categorys[0]); //@FIXME
     return <div className={styles.content}>
         <ul className={styles.list}>
             {
