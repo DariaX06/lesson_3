@@ -1,4 +1,4 @@
-.content{
+.content {
     width: calc(100% - 80px);
     max-width: 1200px;
     padding: 0 40px;
@@ -7,10 +7,12 @@
     align-items: flex-start;
     flex-wrap: wrap;
 }
-.contentItem{
-    width: calc(50% - 10px);
+
+.contentItem {
+    width: calc(50% - 50px);
 }
-.list{
+
+.list {
     width: 100%;
     padding-top: 24px;
     list-style: none;

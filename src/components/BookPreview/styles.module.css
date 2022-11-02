@@ -1,4 +1,4 @@
-.wrapper{
+.wrapper {
     width: calc(100% - 40px);
     background-color: #fff;
     padding: 20px;
@@ -10,26 +10,31 @@
     align-items: center;
     justify-content: space-between;
 }
-.alignBottom{
-    align-items: flex-end; 
+
+.alignBottom {
+    align-items: flex-end;
 }
-.title{
+
+.title {
     font-weight: 700;
     font-size: 20px;
     margin-bottom: 16px;
 }
-.sub_title{
+
+.sub_title {
     font-weight: 400;
     font-size: 16px;
     color: rgba(0, 0, 0, 0.5);
     margin-bottom: 8px;
 }
-.price{
+
+.price {
     font-weight: 700;
     font-size: 24px;
     margin-top: 8px;
 }
-.btn{
+
+.btn {
     width: 38px;
     height: 38px;
     background: #000000;
@@ -39,21 +44,26 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.plus{
+
+.plus {
     background-image: url(./Plus.svg);
 }
-.minus{
+
+.minus {
     background-image: url(./Minus.svg);
 }
-.count{
+
+.count {
     font-weight: 700;
     font-size: 24px;
     margin: 0 20px;
 }
-.disabled{
+
+.disabled {
     opacity: 0.5;
 }
-.countButtons{
+
+.countButtons {
     display: flex;
     align-items: center;
     justify-content: center;
