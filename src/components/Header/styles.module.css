@@ -1,4 +1,4 @@
-.header{
+.header {
     background-color: #000;
     width: calc(100% - 80px);
     padding: 20px 40px;
@@ -7,14 +7,16 @@
     align-items: center;
     justify-content: center;
 }
-.wrapper{
+
+.wrapper {
     width: 100%;
     max-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.logo{
+
+.logo {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
