@@ -23,3 +23,14 @@
     font-size: 20px;
     color: #fff;
 }
+
+.cartLink{
+    width: 24px;
+    height: 24px;
+    background-image: url(../../cart.svg);
+    background-size: cover;
+}
+
+.logoLink {
+    text-decoration: none;
+}

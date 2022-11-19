@@ -1,17 +1,26 @@
 import classnames from "classnames";
-import { useState } from "react";
-import { Category } from "../../components/Category/Category";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { selectCategorys } from "../../store/categorys/selectors";
+import {loadCategorysIfNotExist} from "../../store/categorys/loadCategorysIfNotExist";
 import styles from "./styles.module.css";
-export function GenresPage(props) {
-    const [activeCategory, setActiveCategory] = useState(props.categorys[0]);
+import { NavLink, Outlet } from "react-router-dom";
+
+export function GenresPage() {
+    const dispatch = useDispatch();
+    const categorys = useSelector((state) => selectCategorys(state));
+    
+    useEffect(() => {
+        dispatch(loadCategorysIfNotExist);
+    }, []);
     return <div className={styles.content}>
         <ul className={styles.list}>
-            {
-                props.categorys.map((category) => <li key={category.id} onClick={() => setActiveCategory(category)} className={classnames(styles.link, {
-                    [styles.linkActive]: category === activeCategory
-                })}>{category.name}</li>)
+            {   categorys.length > 0 &&
+                categorys.map((category) => <li key={category.id}><NavLink to={category.id} className={({isActive}) => classnames(styles.link, {
+                    [styles.linkActive]: isActive
+                })}>{category.name}</NavLink></li>)
             }
         </ul>
-        <Category category={activeCategory}></Category>
+        <Outlet></Outlet>
     </div>
 }

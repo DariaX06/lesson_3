@@ -1,0 +1,49 @@
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    padding: 0 40px;
+}
+.price{
+    width: calc(30% - 40px);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.bookList{
+    width: 100%;
+    list-style: none;
+    margin: -8px 0;
+}
+.bookList > li {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+.total{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+.title{
+    margin-bottom: 24px;
+}
+.btn{
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+    padding: 5px 15px;
+    border: none;
+}
+.wrapper{
+    width: 100%;
+}
+.bookPreviewList{
+    width: calc(70% - 20px);
+}
